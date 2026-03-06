@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Logo Section - Swaps based on scroll */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src={isScrolled ? "/logos/proactive-logo.png" : "/logos/proactive-logo-white.png"}
+              src={isScrolled ? "/icons/proactive-logo.png" : "/icons/proactive-logo-light.png"}
               alt="Proactive Prosthetics"
               width={220}
               height={60}
