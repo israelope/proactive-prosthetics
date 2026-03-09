@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import FadeIn from "../ui/FadeIn";
+import ServiceCard from "../ui/ServiceCard";
 
 const Treatment = () => {
   return (
@@ -13,7 +14,7 @@ const Treatment = () => {
             to deliver Patient Crafted Care that helps them move forward with
             confidence.
           </p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 items-center">
             <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[450px]">
               <Image
@@ -40,6 +41,31 @@ const Treatment = () => {
                 deliver care that adapts to patients needs as they progress.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4 md:px-8 py-10 pt-40">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <ServiceCard
+              title="Prosthetics"
+              description="From everyday mobility to high-performance and specialist prosthetic care, we offer advanced lower and upper limb prosthetics that are designed to restore independence and confidence."
+              imageSrc="/images/prosthetics.jpg"
+              href="/treatments/prosthetics"
+            />
+
+            <ServiceCard
+              title="Orthotics"
+              description="We offer custom orthotic solutions, includingg 3D-printed devices, pain-relieving orthoses and advanced bracing, to improve comfort, stability and movement for our patients."
+              imageSrc="/images/orthotics.jpg"
+              href="/treatments/orthotics"
+            />
+
+            <ServiceCard
+              title="Rehabilitation"
+              description="We deliver flexible rehabilitation programmes in clinics and in the community that support recovery in real-world settings and help our patients get back to achieving their goals."
+              imageSrc="/images/rehabilitation.jpg"
+              href="/treatments/rehabilitation"
+            />
           </div>
         </div>
       </main>
