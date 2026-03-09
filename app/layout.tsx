@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Outfit } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar"; // <-- 1. Import it here
+import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 const montserrat = Montserrat({
@@ -26,12 +26,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${montserrat.variable} ${outfit.variable}`}>
       <body className="antialiased font-body flex flex-col min-h-screen">
         
+
         <Navbar />
-        <Footer/> 
         
         <main className="flex-grow">
           {children}
         </main>
+        
+
+        <Footer />
         
       </body>
     </html>

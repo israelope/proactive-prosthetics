@@ -1,9 +1,12 @@
-import Hero from "@/components/sections/Hero";
+import Home from '@/components/sections/Home'
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="w-full flex flex-col">
-      <Hero />
+    <div className='w-full flex flex-col'>
+      <Home/>
     </div>
-  );
+  )
 }
+
+export default page

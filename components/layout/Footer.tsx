@@ -17,7 +17,7 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               {/* Using the white logo for the dark background */}
               <Image
-                src="/icons/proactive-logo-light.png"
+                src="/icons/proactive-logo.png"
                 alt="Proactive Prosthetics"
                 width={200}
                 height={55}

@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
 
-    <header className={`fixed top-0 z-50 w-full transition-all duration-300 ${
+    <header className={`fixed top-0 z-50 w-full transition-all duration-300 px-25  py-6 ${
       isScrolled ? "bg-white border-b border-brand-light shadow-sm py-2" : "bg-transparent py-4"
     }`}>
         <FadeIn>
@@ -48,7 +48,7 @@ export default function Navbar() {
           </Link>
 
           {/* Nav Links - Change text color on scroll */}
-          <nav className={`hidden lg:flex items-center gap-8 font-body font-medium transition-colors ${
+          <nav className={`hidden lg:flex items-center gap-8 font-light transition-colors ${
             isScrolled ? "text-brand-dark" : "text-white"
           }`}>
              <Link href="/about" className="hover:text-brand-blue transition-colors">
@@ -62,9 +62,9 @@ export default function Navbar() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute top-full left-0 w-48 bg-white border border-brand-light shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col">
-                <Link href="/treatments/prosthetics" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Prosthetics</Link>
-                <Link href="/treatments/orthotics" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Orthotics</Link>
-                <Link href="/treatments/rehabilitation" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Rehabilitation</Link>
+                <Link href="/treatments/prosthetics" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-black text-sm">Prosthetics</Link>
+                <Link href="/treatments/orthotics" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm text-black ">Orthotics</Link>
+                <Link href="/treatments/rehabilitation" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm text-black ">Rehabilitation</Link>
               </div>
             </div>
 
@@ -75,11 +75,11 @@ export default function Navbar() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute top-full left-0 w-48 bg-white border border-brand-light shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col">
-                <Link href="/clinics/godalming" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Godalming</Link>
-                <Link href="/clinics/leeds" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Leeds</Link>
-                <Link href="/clinics/cambridge" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Cambridge</Link>
-                <Link href="/clinics/bristol" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Bristol</Link>
-                <Link href="/clinics/manchester" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Manchester</Link>
+                <Link href="/clinics/godalming" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm text-black ">Godalming</Link>
+                <Link href="/clinics/leeds" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm text-black ">Leeds</Link>
+                <Link href="/clinics/cambridge" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm text-black ">Cambridge</Link>
+                <Link href="/clinics/bristol" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm text-black ">Bristol</Link>
+                <Link href="/clinics/manchester" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm text-black ">Manchester</Link>
               </div>
             </div>
 
@@ -90,7 +90,7 @@ export default function Navbar() {
                 <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute top-full left-0 w-48 bg-white border border-brand-light shadow-lg rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col">
-                <Link href="/treatments/prosthetics" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-sm">Medico-Legal Services</Link>
+                <Link href="/treatments/prosthetics" className="px-4 py-3 hover:bg-brand-light hover:text-brand-blue text-black  text-sm">Medico-Legal Services</Link>
               </div>
             </div>
             <Link href="/academy" className="hover:text-brand-blue transition-colors">Academy</Link>
