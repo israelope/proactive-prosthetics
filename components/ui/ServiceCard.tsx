@@ -10,7 +10,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ title, description, imageSrc, href }: ServiceCardProps) {
   return (
-    <Link href={href} className="group relative h-[400px] w-full block rounded-2xl overflow-hidden shadow-sm">
+    <Link href={href} className="group relative h-[450px] w-full block rounded-2xl overflow-hidden shadow-sm">
       <Image
         src={imageSrc}
         alt={title}
