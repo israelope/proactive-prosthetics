@@ -17,7 +17,7 @@ export default function Hero() {
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center text-white pt-10">
           <FadeIn delay={0.2}>
-            <p className="text-5xl md:text-7xl lg:text-8xl font-heading  mb-6 text-white tracking-tight">
+            <p className="text-5xl md:text-7xl lg:text-[7.5em]  font-light mb-6 text-white tracking-tight">
               Patient Crafted Care
             </p>
           </FadeIn>

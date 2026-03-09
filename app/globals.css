@@ -3,7 +3,7 @@
 :root {
   /* Proactive Brand Colors */
   --brand-blue: #7db8f4;
-  --brand-light-blue: #e6f0f9;
+  --brand-light: #2E4A8E;
   --brand-dark: #1a1a1a;
   --brand-grey: #707070;
 
@@ -14,7 +14,7 @@
 @theme inline {
   /* This maps your variables to Tailwind classes like bg-brand-blue */
   --color-brand-blue: var(--brand-blue);
-  --color-brand-light: var(--brand-light-blue);
+  --color-brand-light: var(--brand-light);
   --color-brand-grey: var(--brand-grey);
 
   /* This maps your fonts to Tailwind classes like font-heading */
@@ -29,11 +29,3 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-montserrat), sans-serif;
-  font-weight: 700;
-  color: var(--brand-blue);
-}
