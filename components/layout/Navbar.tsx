@@ -43,7 +43,7 @@ export default function Navbar() {
       <header className={`fixed top-0 z-50 w-full transition-all duration-500 px-4 md:px-8 py-6 ${
         isVisible ? "opacity-100 visible" : "opacity-0 invisible"
       } ${
-        isScrolled ? "bg-white border-b border-brand-light shadow-sm py-2" : "bg-transparent py-4"
+        isScrolled ? "bg-white  shadow-sm py-2" : "bg-transparent py-4"
       }`}>
         <FadeIn>
           <div className="container mx-auto">
@@ -114,13 +114,13 @@ export default function Navbar() {
                 
                 <Link 
                   href="/contact" 
-                  className={`hidden md:flex items-center gap-2 px-6 py-2.5 font-body text-sm uppercase tracking-wide transition-all duration-300 ${
+                  className={` md:flex items-center gap-2 px-6 py-2.5 font-body text-sm uppercase tracking-wide transition-all duration-300  ${
                     isScrolled 
                       ? "bg-transparent border border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white" 
                       : "bg-white text-brand-dark hover:bg-gray-100"
                   }`}
                 >
-                  <span><ArrowRight className="w-4 h-4" /></span> 
+                  <span><ArrowRight className="w-4 h-4 " /></span> 
                   Contact Us
                 </Link>
 

@@ -25,7 +25,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
       }`}
     >
       {/* 1. Header Area */}
-      <div className="flex items-center justify-between px-6 py-6 border-b border-brand-light">
+      <div className="flex items-center justify-between px-6 py-6 ">
         <Link href="/" onClick={handleClose}>
           <Image
             src="/icons/proactive-logo.png"
@@ -40,10 +40,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </button>
       </div>
 
-      {/* 2. Scrollable Menu Content */}
+      
       <div className="flex-1 overflow-y-auto px-6 py-8">
-        
-        {/* VIEW A: The Main Menu */}
         {activeMenu === "main" && (
           <nav className="flex flex-col space-y-6 text-xl font-body text-brand-dark overflow-hidden">
             <Link 
@@ -60,7 +58,12 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               className={`flex items-center justify-between hover:text-brand-blue transition-all duration-500 ease-out transform text-left w-full ${isOpen && activeMenu === "main" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
               style={{ transitionDelay: '200ms' }}
             >
-              Treatments <ChevronRight className="w-5 h-5 text-gray-400" />
+              <Link
+              href="/treatments">
+              Treatments 
+              </Link>
+              <ChevronRight className="w-5 h-5 text-gray-400" />
+              
             </button>
             
             <button 
@@ -68,7 +71,11 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               className={`flex items-center justify-between hover:text-brand-blue transition-all duration-500 ease-out transform text-left w-full ${isOpen && activeMenu === "main" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
               style={{ transitionDelay: '300ms' }}
             >
-              Clinics <ChevronRight className="w-5 h-5 text-gray-400" />
+              <Link
+              href="/Clinics">
+                Clinics
+              </Link>
+               <ChevronRight className="w-5 h-5 text-gray-400" />
             </button>
 
             <Link 
@@ -85,7 +92,11 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               className={`flex items-center justify-between hover:text-brand-blue transition-all duration-500 ease-out transform text-left w-full ${isOpen && activeMenu === "main" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
               style={{ transitionDelay: '500ms' }}
             >
-              Referrers <ChevronRight className="w-5 h-5 text-gray-400" />
+              <Link 
+              href="/referrers">
+                Referrers
+              </Link>
+               <ChevronRight className="w-5 h-5 text-gray-400" />
             </button>
 
             <Link 
@@ -98,8 +109,6 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             </Link>
           </nav>
         )}
-
-        {/* VIEW B: Treatments Sub-Menu */}
         {activeMenu === "treatments" && (
           <div className="flex flex-col space-y-6 text-xl font-body text-brand-dark">
             <button 
@@ -114,8 +123,6 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
             <Link href="/treatments/rehabilitation" onClick={handleClose} className={`hover:text-brand-blue transition-all duration-500 ease-out transform ${activeMenu === "treatments" ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`} style={{ transitionDelay: '400ms' }}>Rehabilitation</Link>
           </div>
         )}
-
-        {/* VIEW C: Clinics Sub-Menu */}
         {activeMenu === "clinics" && (
           <div className="flex flex-col space-y-6 text-xl font-body text-brand-dark">
             <button 
@@ -150,7 +157,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
       {/* 3. FOOTER */}
       <div 
-        className={`p-6 pb-10 mt-auto border-t border-brand-light bg-white transition-all duration-700 ease-out ${
+        className={`p-6 pb-25 mt-auto  bg-white transition-all duration-700 ease-out ${
           isOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}
         style={{ transitionDelay: '700ms' }}
