@@ -3,6 +3,7 @@ import Hero from './Hero'
 import Treatment from './Treatment'
 import Clinics from './Clinics'
 import Team from './Team'
+import ConsultationCTA from './ConsultationCTA'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
     <Treatment/>
     <Clinics/>
     <Team/>
+    <ConsultationCTA/>
     </>
   )
 }

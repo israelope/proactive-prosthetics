@@ -42,25 +42,24 @@ export default function ConsultationCTA() {
           className="object-contain object-bottom object-right" 
         />
       </motion.div>
-
       {/* 4. The Main Card (The "Pop Out" Animation) */}
       <motion.div
-        // Starts small (scale: 0.85) and slightly lower (y: 40)
         initial={{ opacity: 0, scale: 0.85, y: 40 }}
-        // Pops to full size and original position
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
-        // The 'spring' type gives it that satisfying, bouncy pop-out feel
         transition={{ type: "spring", duration: 0.9, bounce: 0.3 }}
         
-        // Notice the border-b-[12px] and border-[#69C9C9] - this creates the teal strip!
-        className="relative z-10 w-full max-w-5xl bg-brand-blue rounded-3xl md:rounded-[2.5rem] border-b-[12px] md:border-b-[16px] border-[#69C9C9] px-6 py-16 md:py-24 text-center shadow-2xl mx-auto"
+        // THE FIXES:
+        // 1. Used exact Navy Blue hex: bg-[#2A4384]
+        // 2. Used a solid drop-shadow for the bottom strip: shadow-[0px_16px_0px_#69C9C9]
+        // 3. Adjusted the border radius to match the original
+        className="relative z-10 w-full max-w-5xl bg-[#2A4384] rounded-2xl md:rounded-3xl shadow-[0px_12px_0px_#69C9C9] md:shadow-[0px_18px_0px_#69C9C9] px-6 py-16 md:py-24 text-center mx-auto"
       >
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-white mb-6">
           Book a consultation
         </h2>
         
-        <p className="text-lg md:text-xl text-brand-light font-body mb-10 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white font-body mb-10 max-w-2xl mx-auto">
           Whether you’re a patient, referrer or professional partner,
           our team is here to help.
         </p>
